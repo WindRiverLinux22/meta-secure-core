@@ -9,7 +9,7 @@ EXTRA_SRC_URI = "\
 
 # We cannot yet use this patch for 32 bit systems.
 GRUB_EFI_PATCH = ""
-GRUB_EFI_PATCH_x86-64 = "file://grub-efi.patch"
+GRUB_EFI_PATCH:x86-64 = "file://grub-efi.patch"
 
 GRUB_MOKVERIFY_PATCH = " \
    file://mok2verify-support-to-verify-non-PE-file-with-PKCS-7.patch \
